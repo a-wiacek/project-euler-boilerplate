@@ -1,0 +1,136 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e170b16e6281deb9f643daa2baaab019bc34e4f28579d63eb5db5d7a4ce1d228
+
+name:           project-euler-boilerplate
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/project-euler-boilerplate#readme>
+homepage:       https://github.com/githubuser/project-euler-boilerplate#readme
+bug-reports:    https://github.com/githubuser/project-euler-boilerplate/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2019 Author name here
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/project-euler-boilerplate
+
+library
+  exposed-modules:
+      Euler
+      Main.Generate
+      Main.Options
+      Main.Run
+      Main.Run.Eulers
+      Main.Simulate
+      Main.Tests
+      Solutions.Euler001
+      Utils.Array
+      Utils.Function
+      Utils.Input
+      Utils.List
+      Utils.Matrix
+      Utils.Memo
+      Utils.Monad
+      Utils.NumberTheory
+      Utils.Numeric
+      Utils.Operators
+      Utils.Queue
+  other-modules:
+      Paths_project_euler_boilerplate
+  hs-source-dirs:
+      src
+  ghc-options: -O2
+  build-depends:
+      QuickCheck
+    , arithmoi
+    , array
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , matrix
+    , monad-memo
+    , mtl
+    , optparse-applicative
+    , random
+    , time
+    , transformers
+    , vector
+    , wide-word
+    , word8
+  default-language: Haskell2010
+
+executable euler
+  main-is: Main.hs
+  other-modules:
+      Paths_project_euler_boilerplate
+  hs-source-dirs:
+      app
+  ghc-options: -O2
+  build-depends:
+      QuickCheck
+    , arithmoi
+    , array
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , matrix
+    , monad-memo
+    , mtl
+    , optparse-applicative
+    , project-euler-boilerplate
+    , random
+    , time
+    , transformers
+    , vector
+    , wide-word
+    , word8
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Utils.FunctionSpec
+      Utils.ListSpec
+      Utils.MatrixSpec
+      Utils.NumberTheorySpec
+      Utils.NumericSpec
+      Utils.QueueSpec
+      Paths_project_euler_boilerplate
+  hs-source-dirs:
+      test
+  ghc-options: -O2
+  build-depends:
+      QuickCheck
+    , arithmoi
+    , array
+    , base >=4.7 && <5
+    , containers
+    , directory
+    , filepath
+    , hspec
+    , matrix
+    , monad-memo
+    , mtl
+    , optparse-applicative
+    , project-euler-boilerplate
+    , random
+    , time
+    , transformers
+    , vector
+    , wide-word
+    , word8
+  default-language: Haskell2010

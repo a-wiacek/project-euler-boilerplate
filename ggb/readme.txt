@@ -1,0 +1,1 @@
+This directory contains pictures drawn in GeoGebra, helping to visualize some geometry problems.
