@@ -2,4 +2,5 @@ haskell/.stack-work/
 haskell/project-euler.cabal
 haskell/test/Solutions
 haskell/!test/Solutions/.keep
+rust/target/
 *~

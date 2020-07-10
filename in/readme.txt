@@ -1,1 +1,1 @@
-This directory stores all the input provided by problem author.
+This directory stores all the input provided by problem authors.
